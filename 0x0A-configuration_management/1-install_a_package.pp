@@ -1,4 +1,6 @@
-#Kills a process named killmenow
-exec{'pkill -f killmenow':
-path  => '/usr/bin/:/usr/local/bin/:/bin/'
+# install puppet-lint using Puppet
+
+package { 'puppet-lint':
+  ensure   => '2.1.1',
+  provider => 'gem',
 }
