@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# SSH Login Commands
+
+# Evaluate SSH Agent
+eval $("ssh-agent")
+
+# Input the location/Path to  your Key
+ssh-add  ~/.ssh/school
+
+# Input Username and IP Address
+ssh ubuntu@52.86.71.94
